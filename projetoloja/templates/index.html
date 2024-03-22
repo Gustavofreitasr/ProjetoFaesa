@@ -1,0 +1,1078 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Urban ManWear</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/django.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Urban Manwear<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Descontos</a></li>
+          <li><a href="#chefs">Vendedores</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li class="dropdown"><a href="#"><span>Drops</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Todos os Drops</a></li>
+              <li class="dropdown"><a href="#"><span>Drops Esgotados</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Drop 1</a></li>
+                  <li><a href="#">Drop 2</a></li>
+                  <li><a href="#">Drop 3</a></li>
+                  <li><a href="#">Drop 4</a></li>
+                  <li><a href="#">Drop 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop 6</a></li>
+              <li><a href="#">Drop 7</a></li>
+              <li><a href="#">Drop 8</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contatos</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a class="btn-book-a-table" href="#book-a-table">Sugestões Aqui</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">As Roupas Mais Vendidas<br>Da América Latina</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Descubra nossa linha de produtos de roupas: elegância e conforto em cada peça, para expressar seu estilo único com qualidade incomparável.</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#book-a-table" class="btn-book-a-table">RESERVE JÁ O SEU KIT</a>
+            <a href="https://www.youtube.com/watch?v=9zLN7gSwq_Q" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Veja exemplos em nossa Loja</span></a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="{% static 'assets/img/urban.png' %}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>SOBRE NÓS</h2>
+          <p>Saiba Mais <span>Sobre Nós</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url({% static 'assets/img/loja.jpg' %}) ;" data-aos="fade-up" data-aos-delay="150">
+            <div class="call-us position-absolute">
+              <h4>Entre em Contato</h4>
+              <p>(27) 2122-4100</p>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Somos uma loja de moda manwear especializada em vendas online, oferecendo lançamentos exclusivos mensais.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Roupas clássicas e urbanas.</li>
+                <li><i class="bi bi-check2-all"></i> Caimento flúido e amplo.</li>
+                <li><i class="bi bi-check2-all"></i> Estampas personalizadas.</li>
+              </ul>
+              <p>
+                Há décadas, uma jovem estilista, inspirada pela diversidade cultural e pelo movimento urbano, decidiu transformar seu pequeno ateliê em uma loja de roupas mainwear. 
+                Com uma visão visionária, ela misturou elementos clássicos com toques modernos, criando um espaço que celebrava a individualidade e a autenticidade. Ao longo dos anos, a loja se tornou um ícone na comunidade, atraindo clientes de todas as esferas da vida em busca de peças únicas que contavam histórias e inspiravam confiança. Assim, nasceu um destino para os amantes da moda que buscavam mais do que apenas roupas - uma experiência onde a expressão pessoal era celebrada e cultivada.
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="{% static 'assets/img/loja2.jpg' %}" class="img-fluid" alt="">
+                <a href="https://www.youtube.com/watch?v=9zLN7gSwq_Q" class="glightbox play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Por que escolher a Urban Manwear?</h3>
+              <p>
+                Nossa loja oferece uma seleção cuidadosamente variadas roupas e acessórios, garantindo qualidade e estilo único em cada peça. 
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Saiba Mais <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-center">
+            <div class="row gy-4">
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4>Nossas Ofertas</h4>
+                  <p>Acontecem em datas especificas em cada mês e sempre divulgado em nosso site.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4>Clientes Vips</h4>
+                  <p>Quanto mais compras fizer, maiores descontos e vouchers terão.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Estoque</h4>
+                  <p>Lançamos mensalmente kits de 100 unidades de cada peça para garantir a exclusividade.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="350" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clientes Vips</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="560000" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Vendas</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Dias restantes para novo Drop</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Funcionários</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Nossos kits</h2>
+          <p>Verifique <span>Nossos kits</span></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Camisetas</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Bermudas</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+              <h4>Moletons</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+              <h4>Blazers</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Camisetas</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/camiseta1.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/camiseta1.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Camiseta Comfort Básica</h4>
+                <p class="ingredients">
+                  Algodão Peruano Vermelho Telha
+                </p>
+                <p class="price">
+                  R$ 249,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/camiseta2.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/camiseta2.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Camiseta de Desenho</h4>
+                <p class="ingredients">
+                  Meia Malha Com Bordado E Estampa Taz Trap Nas Costas Marrom
+                </p>
+                <p class="price">
+                  $ 249,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/camiseta3.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/camiseta3.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Camiseta Estampada</h4>
+                <p class="ingredients">
+                  Meia Malha Com Estampa De Astronauta Cervejeiro Preto
+                </p>
+                <p class="price">
+                  $ 249,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/camiseta4.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/camiseta4.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Camiseta Relaxed</h4>
+                <p class="ingredients">
+                  Meia Malha Com Etiqueta Famous On Fire Preto
+                </p>
+                <p class="price">
+                  $ 499,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/camiseta5.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/camiseta5.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Camiseta Regular</h4>
+                <p class="ingredients">
+                  Algodão Com Lettering Atlanta E Manga Longa Preto
+                </p>
+                <p class="price">
+                  $ 499,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/camiseta6.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/camiseta6.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Camiseta Regular</h4>
+                <p class="ingredients">
+                  Em Algodão Malhão Com Patches Emborrachadas Verde Oliva
+                </p>
+                <p class="price">
+                  $ 499,99
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Bermudas</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/bermuda1.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/bermuda1.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Bermuda Em Sarja</h4>
+                <p class="ingredients">
+                  Com Elástico No Cós E Cordão Cinza
+                </p>
+                <p class="price">
+                  $ 249,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/bermuda2.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/bermuda2.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Bermuda Paper Touch</h4>
+                <p class="ingredients">
+                  Com Estampa Animal Print Zebra Vermelho
+                </p>
+                <p class="price">
+                  $ 249,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/bermuda3' %}" class="glightbox"><img src="{% static 'assets/img/menu/bermuda3.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Bermuda Paper Touch</h4>
+                <p class="ingredients">
+                  Com Estampa Folhagem Branco
+                </p>
+                <p class="price">
+                  $ 159,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/bermuda4.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/bermuda4.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Bermuda De Banho</h4>
+                <p class="ingredients">
+                  Em Microfibra Com Detalhe Refletivo Azul
+                </p>
+                <p class="price">
+                  $ 249,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/bermuda5.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/bermuda5.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Bermuda Em Sarja</h4>
+                <p class="ingredients">
+                  Com Elástico No Cós E Cordão Verde Médio
+                </p>
+                <p class="price">
+                  $ 249,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/bermuda6.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/bermuda6.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Bermuda De Banho</h4>
+                <p class="ingredients">
+                  Estampa Margaridão Rosa
+                </p>
+                <p class="price">
+                  $ 159,99
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Moletons</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/moletom1.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/moletom1.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blusão Fechado Balloon</h4>
+                <p class="ingredients">
+                  Em Moletom Com Capuz E Etiqueta No Bolso Bege
+                </p>
+                <p class="price">
+                  $ 799,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/moletom2.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/moletom2.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blusão Fechado</h4>
+                <p class="ingredients">
+                  Em Moletom Com Lettering Growth Through Adventure Marrom
+                </p>
+                <p class="price">
+                  $ 599,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/moletom3.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/moletom3.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blusão Fechado </h4>
+                <p class="ingredients">
+                  Em Moletom Com Capuz E Textura De Pelinhos Marrom
+                </p>
+                <p class="price">
+                  $ 499,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/moletom4.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/moletom4.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blusão Fechado</h4>
+                <p class="ingredients">
+                  Em Moletom Com Estampa Do One PIece Azul
+                </p>
+                <p class="price">
+                  $ 1.000,00
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/moletom5.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/moletom5.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blusão Comfort Fechado</h4>
+                <p class="ingredients">
+                  Em Moletom Com Capuz E Estampa Naruto Verde
+                </p>
+                <p class="price">
+                  $ 999,99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/moletom6.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/moletom6.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blusão Fechado Básico</h4>
+                <p class="ingredients">
+                  Em Moletom Com Detalhes Em Ribana Preto
+                </p>
+                <p class="price">
+                  $ 499,99
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-dinner">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Blazers</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/blazer1.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/blazer1.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blazer Texturizado</h4>
+                <p class="ingredients">
+                  Com Botões E Bolsos Marrom
+                </p>
+                <p class="price">
+                  $ 1.500,00
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/blazer2.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/blazer2.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blazer Slim Com Textura</h4>
+                <p class="ingredients">
+                  Bolsos Aparentes E Efeito Mesclado Azul
+                </p>
+                <p class="price">
+                  $ 1.500,00
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/blazer3.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/blazer3.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blazer Super Slim</h4>
+                <p class="ingredients">
+                  Em Meia Malha Sem Forro Cinza Claro
+                </p>
+                <p class="price">
+                  $ 1.500,00
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/blazer4.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/blazer4.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Paletó Slim Básico</h4>
+                <p class="ingredients">
+                  Em Poliviscose Com Bolsos Preto
+                </p>
+                <p class="price">
+                  $ 1.500,00
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/blazer5.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/blazer5.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blazer Slim</h4>
+                <p class="ingredients">
+                  Em Poliviscose Com Gola Lapela E Bolsos Verde Escuro
+                </p>
+                <p class="price">
+                  $ 1.500,00
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{% static 'assets/img/menu/blazer6.png' %}" class="glightbox"><img src="{% static 'assets/img/menu/blazer6.png' %}" class="menu-img img-fluid" alt=""></a>
+                <h4>Blazer Slim</h4>
+                <p class="ingredients">
+                  Em Sarja Com Gola Lapela E Bolsos Marrom
+                </p>
+                <p class="price">
+                  $ 1.500,00
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Feedbacks</h2>
+          <p>O que dizem os clientes <span>Sobre Nós</span></p>
+        </div>
+
+        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Estes kits excedem todas as expectativas - qualidade incrível, caimento perfeito e estilo inigualável.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>João Silva</h3>
+                      <h4>Cliente VIP</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Meu marido adorou as peças que comprei para ele! Ótima qualidade e estilo impecável.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Sayuri Tanajiro</h3>
+                      <h4>Cliente</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Meus amigos adoraram as peças de roupa que dei de presente! Ficaram impressionados com a qualidade e o estilo. Definitivamente farei compras aqui novamente.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Maria Alvarenga</h3>
+                      <h4>Cliente</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Os blazers são simplesmente incríveis! A qualidade do tecido e o corte são impecáveis, adicionando um toque de elegância a qualquer look.
+                      </p>
+                      <h3>Lucas Rocha</h3>
+                      <h4>Cliente VIP</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Drops</h2>
+          <p>Compre <span>Antecipado</span> Antes de Lançar</p>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url({% static 'assets/img/drop1.jpg' %})">
+              <h3>Camisetas</h3>
+              <div class="price align-self-start">$ 500</div>
+              <p class="description">
+                Garanta seu acesso exclusivo e aproveite ofertas especiais ao comprar antecipadamente antes do lançamento.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url({% static 'assets/img/drop2.jpg' %})">
+              <h3>Bermudas</h3>
+              <div class="price align-self-start">$ 200</div>
+              <p class="description">
+                "Compre bermudas antecipadamente para garantir sua peça favorita em edição limitada e desfrutar de um desconto exclusivo antes do lançamento.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url({% static 'assets/img/drop3.jpg' %})">
+              <h3>Blazers</h3>
+              <div class="price align-self-start">$ 1.000,00</div>
+              <p class="description">
+                Adquira blazers antecipadamente para assegurar sua exclusividade em designs de alta qualidade e receber primeiro as últimas tendências em elegância e sofisticação.
+              </p>
+            </div><!-- End Event item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Vendedores</h2>
+          <p>Nosso <span>Time</span> Comercial</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/chefs/selfie3.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Pedro Santos</h4>
+                <span>CEO / Vendedor</span>
+                <p>O visionário que transformou sonhos em realidade. Líder da melhor loja da América Latina, onde estilo e excelência se encontram..</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/chefs/selfie2.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sara Santos</h4>
+                <span>Vendedora</span>
+                <p>Profissional apaixonada por moda, especialista em marketing e vendas. Transforma cada cliente em um entusiasta da moda com seu estilo e habilidades excepcionais de vendas.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/chefs/selfie.png' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Bernardo Oliveira</h4>
+                <span>Vendedor</span>
+                <p>Perfeccionista e apaixonado por moda, combina habilmente designs para criar looks únicos e elegantes para cada cliente, elevando o estilo pessoal a novos patamares.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Sugestões de Looks</h2>
+          <p>Deixe <span>Sua Mensagem</span> Para o Nosso Time</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-4 reservation-img" style="background-image: url({% static 'assets/img/ideia.jpg' %});" data-aos="zoom-out" data-aos-delay="200"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Vamos avaliar sua sugestão. Obrigado!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar</button></div>
+            </form>
+          </div><!-- End Reservation Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Galeria</h2>
+          <p>Imagens <span>Capturadas Por Vocês</span></p>
+        </div>
+
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/gallery-1.jpg' %}"><img src="{% static 'assets/img/gallery/gallery-1.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/gallery-2.jpg' %}"><img src="{% static 'assets/img/gallery/gallery-2.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/gallery-3.jpg' %}"><img src="{% static 'assets/img/gallery/gallery-3.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/gallery-4.jpg' %}"><img src="{% static 'assets/img/gallery/gallery-4.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/gallery-5.jpg' %}"><img src="{% static 'assets/img/gallery/gallery-5.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/gallery-6.jpg' %}"><img src="{% static 'assets/img/gallery/gallery-6.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/gallery-7.jpg' %}"><img src="{% static 'assets/img/gallery/gallery-7.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/gallery-8.jpg' %}"><img src="{% static 'assets/img/gallery/gallery-8.jpg' %}" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contato</h2>
+          <p>Precisa de Ajuda? <span>Entre em Contato Conosco</span></p>
+        </div>
+
+        <div class="mb-3">
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-map flex-shrink-0"></i>
+              <div>
+                <h3>Nosso Endereço</h3>
+                <p>Av. Vitória, 2220 - Monte Belo, Vitória - ES, 29053-360</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>contato@examplo.com.br</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Número</h3>
+                <p>(27) 2122-4100</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Horário de Funcionamento</h3>
+                <div><strong>Segunda a Sábado:</strong> 08:00AM - 22:00PM
+                  <strong>Domingo:</strong> Aberto até as 22:00
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-xl-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Carregando</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Sua Mensagem foi enviada, obrigado!</div>
+          </div>
+          <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+        </form><!--End Contact Form -->
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Endereço</h4>
+            <p>
+              Av Vitória <br>
+              Monte Belo, Vitória - ES, 29053-360<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contato</h4>
+            <p>
+              <strong>Telefone:</strong> (27) 2122-4100<br>
+              <strong>Email:</strong> contato@examplo.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Horário de Funcionamento</h4>
+            <p>
+              <strong>Segunda a Sábado: 08:00AM</strong> - 22:00PM<br>
+              Domingo: Aberto até as 22:00
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Siga Nossa Página</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Urban Manwear</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+
+        Designed by <a href="https://bootstrapmade.com/">Gustavo de Freitas Rodrigues</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
